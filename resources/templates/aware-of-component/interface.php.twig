@@ -1,0 +1,26 @@
+{{ '<?php' }}
+
+namespace {{ interfaceNamespace }};
+
+/**
+ * {{ title }} Aware
+ *
+ * Component is aware of {{ dataType }} "{{ propertyInDescription }}"
+ *
+ * @author {{ include('partials/author-and-email.twig') }}
+ * @package {{ interfaceNamespace }}
+ */
+interface {{ interfaceClassName }}
+{
+    {{ include('partials/set-method-description.twig') }}
+    {{ include('partials/set-method.twig') }};
+
+    {{ include('partials/get-method-description.twig') }}
+    {{ include('partials/get-method.twig') }};
+
+    {{ include('partials/has-method-description.twig') }}
+    {{ include('partials/has-method.twig') }};
+
+    {{ include('partials/get-default-method-description.twig') }}
+    {{ include('partials/get-default-method.twig') }};
+}
