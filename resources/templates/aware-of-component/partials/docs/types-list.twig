@@ -1,6 +1,0 @@
-{# Table Header #}
-| Type | Description | Namespaces |
-|------|-------------|------------|
-{% for type, component in types %}
-| {{ "`#{type}`" }} | {{ component.description }} | {{ "`#{component.interface}`" }} <br> <br> {{ "`#{component.trait}`" }} |
-{% endfor %}
